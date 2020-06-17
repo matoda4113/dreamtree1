@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코팅꿈나무 템플릿1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* 전체 마진설정,박스크기 설정 */
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* 헤더부분 */
+        header ul {
+            list-style-type: none;
+            background-color: black;
+            padding: 0;
+            width: 100%;
+            position: fixed;
+        }
+        header li {
+            display:inline-block;
+            
+            
+            
+        }
+        header a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            padding: 20px 30px;
+            
+        }
+        li:hover{
+            background-color: lightgray;
+            
+        }
+        a:hover{
+            font-weight: 500;
+            color: black;
+
+        }
+        
+       
+        a.find:hover{
+            background-color: tomato;
+            color: white;
+
+        }
+        ul::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /* 메인부분 */
+        main .viewhome {
+            height: 1000px;
+            background-color: violet;
+                        
+        }
+        
+        main .viewprofile {
+            height: 1600px;
+        }
+        .viewprofile .profiletable {
+            height: 800px;
+            background-color: white;
+        }
+
+        .viewprofile .profilepic {
+            height: 800px;
+            background-color: blue;
+        }
+        main .viewtour {
+            height: 1000px;
+            background-color: yellow;
+        }
+        main .viewcontact {
+            height: 800px;
+            background-color: green;
+        }
+                 
+        
+        .profilepic img {
+            float: left;
+            height: 100%;
+        }
+        
+        .profilepic::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PROFILE</a></li>
+            <li><a href="#">TOUR</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li class="lastli"><a href="#">MORE</a></li>
+            <li style="float: right;" ><a class="find" href="#"><span class="fa fa-search"></span></a></li>
+            
+        </ul>
+    </header>
+    <main>
+        <div class="viewhome"></div>
+        <div class="viewprofile">
+            <div class="profiletable">
+                <div><p>Profile</p></div>
+                <h1>기본사항</h1>
+                <table>  
+                        <tr>
+                            <td>이름</td>
+                            <td>이성훈 LEE SUNG HOON </td>
+                        </tr>                                      
+                        <tr>
+                            <td>생년원일</td>
+                            <td>1990년 3월 17일</td>
+                        </tr>
+                        <tr>
+                            <td>키,몸무게</td>
+                            <td>176cm,75kg</td>
+                        </tr>
+                        <tr>
+                            <td>병력</td>
+                            <td>2012.05 의무경찰 사상방순대 만기제대</td>
+                        </tr>
+                        <tr>
+                            <td>취미</td>
+                            <td>당구,볼링,골프,낚시</td>
+                        </tr>
+                        <tr>
+                            <td>특기</td>
+                            <td>태국어</td>
+                        </tr>
+                        <tr>
+                            <td>정규학력</td>
+                            <td>진주 경상대학교 기계공학 학사</td>
+                        </tr> 
+                        <tr>
+                            <td>자녀</td>
+                            <td>아직 없음</td>
+                        </tr> 
+                        <tr>
+                            <td>저서</td>
+                            <td>아직 없음</td>
+                        </tr>                   
+                </table>
+                <h1>학력</h1>
+                <table>  
+                        <tr>
+                            <td>2020.05-2020.09</td>
+                            <td>양정 인력개발센터 문화컨텐츠앱개발 수료</td>
+                        </tr>                                      
+                        <tr>
+                            <td>2018.08-2019.06</td>
+                            <td>GYBM 태국 3기과정 수료</td>
+                        </tr>
+                        <tr>
+                            <td>2009.03-2018.08</td>
+                            <td>진주 경상대학교 기계공학 학사</td>
+                        </tr>
+                        <tr>
+                            <td>2006.03-2009.02</td>
+                            <td>부산 경남고등학교 졸업</td>
+                        </tr>
+                        <tr>
+                            <td>2003.03-2006.02</td>
+                            <td>부산 남중 졸업</td>
+                        </tr>                  
+                </table>
+                <br>
+                <h1>직장 및 도전이력</h1>
+                <table>  
+                                                            
+                        <tr>
+                            <td>2018.08-2019.06</td>
+                            <td>스마트스토어 해외구매대행업</td>
+                        </tr>
+                        <tr>
+                            <td>2009.03-2018.08</td>
+                            <td>태국 신영엔지니어링 중간관리자</td>
+                        </tr>
+                        <tr>
+                            <td>2006.03-2009.02</td>
+                            <td>1차 사업도전</td>
+                        </tr>
+                        <tr>
+                            <td>2003.03-2006.02</td>
+                            <td>벤허 호텔 관리자</td>
+                        </tr>                  
+                </table>
+            </div>
+            <div class="profilepic">
+                <img src="./images/profile/7.jpg" alt="">
+                <img src="./images/profile/6.jpg" alt="">
+                <!-- <img src="./images/profile/5.jpg" alt=""> -->
+                <!-- <img src="./images/profile/4.jpg" alt="">
+                <img src="./images/profile/3.jpg" alt="">
+                <img src="./images/profile/2.jpg" alt="">
+                <img src="./images/profile/1.jpg" alt=""> -->       
+            </div>
+            
+        </div>
+    
+        <div class="viewtour"></div>
+        <div class="viewcontact"></div>
+        
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
