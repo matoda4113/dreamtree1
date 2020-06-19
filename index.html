@@ -36,12 +36,44 @@
         li:hover{
             background-color: lightgray;
             
+            
+        }
+        .dropbox-contents a:hover{
+            background-color: lightgray;
+            
         }
         a:hover{
             font-weight: 500;
             color: black;
 
         }
+        
+        /* 드롭다운 */
+        header .lastli a{
+            display: block;
+            
+        }
+        .dropbox-contents {
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            display: none;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            
+                
+        }
+       .dropbox-contents a {
+           color: black;
+       }
+        
+        .lastli:hover .dropbox-contents {
+            display: block;
+        }
+        .lastli {
+            position: relative;
+        }
+
+        
         
        
         a.find:hover{
@@ -57,7 +89,7 @@
         /* 메인부분 */
         main .viewhome {
             height: 1000px;
-            background-color: violet;
+            /* background-color: violet; */
                         
         }
         
@@ -133,6 +165,10 @@
             display: block;
             clear: both;
         }
+
+        
+
+
         
     </style>
 </head>
@@ -143,7 +179,14 @@
             <li><a href="#profile">PROFILE</a></li>
             <li><a href="#">TOUR</a></li>
             <li><a href="#">CONTACT</a></li>
-            <li class="lastli"><a href="#">MORE</a></li>
+            <li class="lastli">
+                <a class="more" href="#">MORE</a>
+                <div class="dropbox-contents">
+                    <a href="">더보기1</a>
+                    <a href="">더보기2</a>
+                    <a href="">더보기3</a>
+                </div>
+            </li>
             <li style="float: right;" ><a class="find" href="#"><span class="fa fa-search"></span></a></li>
             
         </ul>
